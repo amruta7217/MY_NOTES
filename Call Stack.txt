@@ -1,0 +1,58 @@
+********************  Call Stack  ********************
+
+1.global execution
+2.function execution
+3.eval execution 
+
+there are 2 phase 
+1. memory creation
+2. execution
+
+lets try to understand with example
+
+let val1 = 10
+let val2 = 5
+
+function addNum(num1, num2){
+
+	let total = num1 + num2
+	return total
+}
+
+let result1 = addNum(val1, val2)
+let result2 = addNum(12,23)
+
+1. Golbal Execution
+	so this is allocated to the global execution
+
+2. Memory Phase
+	val1 -> undefined
+	val2 -> undefined
+	addNum -> defination
+	result1 -> undefined
+	result2 -> undefined
+
+3. Execution Phase
+	val1 -> 10
+	val2 -> 5
+	
+	addNum -> it will create other execution context and create 2 pahse New varible env + execution thread  and it will also delete after their execution
+	
+	1. Memory pahse
+	val1 -> undefined
+	val2 -> undefined
+	total -> undefined
+	
+
+	2.Execution conrtext
+	num1 -> 10
+	num2 -> 5
+	total -> 15  ------> It will return our global execution context
+
+For result2 its same as result 1 (its same as 3)
+
+	
+
+
+
+

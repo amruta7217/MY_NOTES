@@ -1,0 +1,84 @@
+let,const,var
+clouser,
+hoisting,
+iife (Immediately invoked function expression)with example,
+promises,
+callback, why its needed
+call,apply,bind,
+call stack (event loop)
+
+difference between normal and arrow function
+
+useState
+
+useEffect
+
+useCallback
+
+useMemo
+
+redux and context api
+
+diff between usememo and usecallback
+
+how to unmount component in functional component
+
+what is react and advantages
+
+what is virtual dom
+
+what is JSX
+
+does web browser understand jsx ? how its executed on browser?
+
+Babel comes along with react?
+
+What are refs in react?
+
+What is props?
+
+What is prop drilling? Is it good? How we can resolve?
+
+Context and redux ?
+
+Code refactoring?
+
+What is class and function component?
+
+Class components are extended from?
+
+Diff between presentation and container component?
+
+What are diff performance optimization technique in react?
+
+Pure function?
+
+Code spitting?
+
+Lazy loading?
+
+How will you handle errors and exceptions in react?
+
+What are error boundaries in react?
+
+How can you pass the data from parent to child?
+
+What are legacy component?
+
+What is dependency injection?
+
+What are diff life cycle methods of react?
+
+What is redux?
+
+What is diff between setstate and replace state?
+
+Is it possible react without rendering HTML?
+
+How you make sure your application is secure?
+
+What are polyfill?
+
+How can I avoid relative path? Absolute path?
+what we used to increase the performance
+react life cycle with hooks
