@@ -1,0 +1,94 @@
+## git init
+Initialize a new git repo
+
+## git add <files>
+add files to the staging area use command "git add . (add all files)"
+
+## git reset
+restore last commit, undo local file changes 
+
+## git diff
+its define the diff between 2 commits it means your last commit and current commit
+
+## git status
+it is used to check of the staging area and working directory
+
+## git commit -m "message"
+commit locally files on the directory
+
+## git log
+view the entire commit history
+
+## git clone [url]
+download the existing file or repo
+
+## git branch 
+check all the local branches to the machine
+
+## git branch <branch-name>
+create a new branch locally
+
+## git branch -d <branch-name>
+delete branch locally
+
+## git branch -m <new-name>
+used to rename the current working branch
+
+## git merge <branch-name>
+merge the provide branch to current working branch
+
+## git checkout <branch-name>
+switch to the another branch from current branch
+
+## git checkout -b <branch-name>
+create a new branch and switch to that branch
+
+## git push <remote> <branch-name>
+save all commits to the remote repo
+
+## git pull <remote>
+pull down all the updates from the remote repo
+
+## git rm <file-name>
+remove a file from working directory
+
+## git stash
+it is used to temp removed uncommited changes
+
+## git pull
+fetch and merge any commit from the tracking remote branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
