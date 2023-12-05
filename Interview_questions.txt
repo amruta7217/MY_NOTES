@@ -9,6 +9,252 @@ call stack (event loop)
 
 difference between normal and arrow function
 
+
+
+1. hoisting
+
+var name = 'abc'
+function showName(){
+	console.log(name) //undefined
+	var name = 'xyz'
+}
+showName()
+
+var discussion = 'reactjs';
+function discussion () {}
+console.log(typeof discussion) //string
+
+0.1 + 0.2 === 0.3 //false,
+
+typeof typeof null
+
+const obj1 = {
+		name: "test",
+		address: {
+			city: "noida",
+			state: "up" 
+		}
+	}
+const obj2 = { ...obj1 }
+obj1.address.city = "greater noida"
+console.log(obj2.address.city)
+
+ 
+this
+
+let obj1 = {
+	firstName: 'Amazon',
+	lastName: 'USA',
+	show: function(){
+		console.log(this.firstName + " " + this.lastName);
+	}
+}
+let obj2 = {
+	firstName: 'Fujitsu',
+	lastName: 'India'
+}
+
+obj1.show() //
+obj1.show.call(obj2)
+
+call, apply, bind
+
+ 
+function test(name){
+	this.name = name
+	console.log(this)
+}	
+
+const test () => {
+	console.log(this)
+}
+
+const a = () => 10 //10
+const b = () => (10) //10
+const c = () => {10} //undefine
+const d = () => {} // undefine
+const e = () => ({}) // object
+console.log(a(), b(), c(), d(), e())
+
+react
+
+ 
+
+const App = () => {
+  const [counter, setCounter] = useState(0)
+
+ 
+
+  const handler = () => {
+    setCounter(counter + 1)
+    console.log(counter) //2
+    setCounter(prevCounter => prevCounter + 1)
+    console.log(counter) //2
+  }
+
+ 
+
+  return <button onClick={handler}>{counter}</button>
+}
+
+
+console.log(this)
+
+let obj = {
+    a: 'A'
+}
+
+let obj1 = {
+    a: 'B'
+}
+
+obj1 = {...obj}
+console.log(obj)
+console.log(obj1)
+
+function test1() {
+    return {
+        a:'A'
+    }
+}
+
+function test2() {
+    return {
+        a:'B'
+    }
+}
+
+console.log(test1())
+console.log(test2())
+
+console.log(getResult());
+ 
+function getResult() {
+  return "Hello, Function 1!";
+}
+ 
+var getResult = function() {
+  return "Hello, Function 2!";
+} 
+
+const promise1 = new Promise((resolve, reject) => {
+  console.log(1);
+  resolve('success')
+});
+promise1.then(() => {
+  console.log(3);
+});
+
+console.log(4); */
+
+
+
+const arr = [undefined,null,0,"1",false];
+const result = arr.filter(item=>item);
+console.log("result ",result);
+
+function a(){
+  b = 10
+}
+
+a()
+console.log(b)  // output is 10 beacuse its take as a global var
+
+console.log(typeof null);
+console.log(typeof []);
+console.log(typeof class {});
+console.log(null === undefined);
+
+var a = [3, 2, 1];
+var b = [3, 2, 1];
+
+var c = [3, 2, 1];
+var d = c.concat();
+
+var e = [3, 2, 1];
+var f = e;
+f.reverse();
+
+console.log(a === b);
+console.log(c === d);
+console.log(e === f);
+
+console.log(0);
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => console.log(1), 0);
+  console.log(2);
+  resolve('success');
+  console.log(3);
+});
+
+promise.then(() => {
+  console.log(4);
+});
+
+console.log(5);
+
+
+const x = [4, 5, 6];
+  
+x.__proto__.hi = x.reduce((p, v) => Array.from(v)).length;
+
+Object.prototype.hi = ++x.hi;
+
+console.log([1].hi + Object.keys(x).length);
+
+const myPage = {
+  name: "hoccoban",
+  address: "youtube.com/hoccoban",
+  getInfo() {
+    return this;
+  },
+  getContent: function() {
+    return this.getInfo() === window ? this.name : this.address;
+  },
+};
+  
+console.log(myPage.getContent());
+
+let obj = { a:1, b:2 }
+
+let {a, b:x} = obj
+
+console.log(x)
+
+// conver array to object
+
+const arr1 = ["a","b","c"]
+const arr2 = [1,2,3]
+
+const createObjectFromArray = (keys, values) => Object.fromEntries(keys.map((key,index) => [key,values[index]]))
+
+console.log(createObjectFromArray(arr1, arr2))
+
+ 
+
+react fragment
+<></>
+<React.Fragment>
+
+react portal
+
+SyntheticEvent
+
+render prop
+
+react query
+
+ 
+
+https://abc.com
+1. Load time
+2. build time //main, chunk1
+
+ aws
+
+
+
 useState
 
 useEffect
